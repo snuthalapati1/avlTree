@@ -1,0 +1,16 @@
+language: java
+
+dist: trusty
+
+jdk:
+
+- oraclejdk8
+
+sudo: false
+
+script:
+
+- mvn test
+
+- mvn evosuite:info
+
